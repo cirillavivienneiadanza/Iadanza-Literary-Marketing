@@ -1,0 +1,224 @@
+/* style.css for Iadanza Literary Marketing */
+
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  margin-top: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* HEADER */
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav a {
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #fff;
+  color: #000;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background: #ddd;
+}
+
+.hero-image img {
+  width: 350px;
+  height: auto;
+  border: 3px solid #fff;
+  border-radius: 6px;
+}
+
+/* SERVICES */
+.services {
+  padding: 70px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+}
+
+.service-list li {
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+/* ABOUT */
+.about {
+  padding: 70px 0;
+}
+
+.about p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 70px 0;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.testimonial {
+  background: #111;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #333;
+}
+
+.testimonial p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* CONTACT */
+.contact {
+  padding: 70px 0;
+}
+
+.contact a {
+  font-weight: bold; 
+}
+/* Contact Layout Fix */
+.contact-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: #111;
+    border: 1px solid #444;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* FOOTER */
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid #222;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* Accessibility: Show focus outlines only for keyboard users */
+body.user-is-tabbing a:focus {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
